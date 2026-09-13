@@ -65,7 +65,7 @@ body {
   border-radius: 2px; padding: 2px 8px; font-weight: 600;
 }
 .bn-headline h1 {
-  font-size: 21px; font-weight: 600; line-height: 1.35; margin: 10px 0 8px;
+  font-size: 21px; font-weight: 600; line-height: 1.65; margin: 10px 0 8px;
 }
 .bn-headline h1 span, .bn-hl {
   background: var(--bn-highlight);
@@ -116,6 +116,7 @@ body {
 }
 .bn-editorial-strip a { color: var(--bn-muted); text-decoration: none; font-size: 11px; }
 .bn-editorial-strip a:hover { color: var(--bn-ink-soft); }
+.bn-mobile-br { display: none; }
 
 /* 섹션 목록 페이지 */
 .bn-section-title { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
@@ -151,7 +152,7 @@ body {
 .bn-flyer .bn-fine { font-size: 9px; color: var(--bn-faint); margin-top: 6px; }
 
 .bn-letter { border-left: 2px solid var(--bn-border); padding-left: 16px; }
-.bn-letter h3 { font-size: 14.5px; font-weight: 600; margin: 0 0 8px; }
+.bn-letter h3 { font-size: 14.5px; font-weight: 600; line-height: 1.6; margin: 0 0 8px; }
 .bn-letter h3 span { background: var(--bn-highlight); padding: 2px 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .bn-letter p { font-size: 12.5px; line-height: 1.85; color: var(--bn-ink-soft); margin: 0 0 8px; }
 .bn-letter .bn-sign { font-size: 11.5px; color: var(--bn-ink-soft); font-style: italic; margin: 0; }
@@ -255,6 +256,7 @@ body {
   }
   .bn-nav::-webkit-scrollbar { display: none; }
   .bn-nav a { padding: 7px 9px; font-size: 11px; white-space: nowrap; flex-shrink: 0; }
+  .bn-mobile-br { display: inline; }
   .bn-grid { grid-template-columns: 1fr 1fr; grid-template-areas:
     "culture culture"
     "incident incident"
