@@ -65,7 +65,12 @@ body {
 .bn-headline h1 {
   font-size: 21px; font-weight: 600; line-height: 1.35; margin: 10px 0 8px;
 }
-.bn-headline h1 span, .bn-hl { background: var(--bn-highlight); padding: 2px 3px; }
+.bn-headline h1 span, .bn-hl {
+  background: var(--bn-highlight);
+  padding: 2px 4px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
 .bn-headline p { font-size: 13px; line-height: 1.85; color: var(--bn-ink-soft); margin: 0; }
 .bn-more { color: var(--bn-accent); font-weight: 600; text-decoration: none; }
 
@@ -145,7 +150,7 @@ body {
 
 .bn-letter { border-left: 2px solid var(--bn-border); padding-left: 16px; }
 .bn-letter h3 { font-size: 14.5px; font-weight: 600; margin: 0 0 8px; }
-.bn-letter h3 span { background: var(--bn-highlight); padding: 2px 3px; }
+.bn-letter h3 span { background: var(--bn-highlight); padding: 2px 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .bn-letter p { font-size: 12.5px; line-height: 1.85; color: var(--bn-ink-soft); margin: 0 0 8px; }
 .bn-letter .bn-sign { font-size: 11.5px; color: var(--bn-ink-soft); font-style: italic; margin: 0; }
 .bn-letter .bn-editor-note { font-size: 10.5px; color: var(--bn-faint); margin: 0 0 8px; }
@@ -184,12 +189,12 @@ body {
 /* 편집실 소식 */
 .bn-editor-box { border: 0.5px solid var(--bn-accent); border-radius: 2px; padding: 16px 18px; margin-bottom: 24px; }
 .bn-editor-box h3 { font-size: 13.5px; font-weight: 600; margin: 0 0 8px; }
-.bn-editor-box h3 span { background: var(--bn-highlight); padding: 2px 3px; }
+.bn-editor-box h3 span { background: var(--bn-highlight); padding: 2px 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .bn-editor-box p { font-size: 12.5px; line-height: 1.85; color: var(--bn-ink-soft); margin: 0 0 6px; }
 .bn-editor-box .bn-sign { font-size: 11px; color: var(--bn-muted); font-style: italic; margin: 0; }
 
 .bn-reporter-section-title { font-size: 12px; font-weight: 600; letter-spacing: 1px; margin: 0 0 14px; }
-.bn-reporter-section-title span { background: var(--bn-highlight); padding: 2px 3px; }
+.bn-reporter-section-title span { background: var(--bn-highlight); padding: 2px 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .bn-reporter-note { border-left: 2px solid var(--bn-line); padding-left: 14px; margin-bottom: 16px; }
 .bn-reporter-note p { font-size: 12.5px; line-height: 1.8; color: var(--bn-ink-soft); margin: 0 0 5px; }
 .bn-reporter-note .bn-sign { font-size: 11px; color: var(--bn-muted); font-style: italic; margin: 0; }
@@ -239,6 +244,8 @@ body {
 @media (max-width: 480px) {
   .bn-wrap { padding: 12px 8px 40px; }
   .bn-paper { padding: 22px 16px; }
+  .bn-logo { font-size: 17px; letter-spacing: 0.5px; }
+  .bn-nav a { padding: 7px 7px; font-size: 11px; }
   .bn-grid { grid-template-columns: 1fr 1fr; grid-template-areas:
     "culture culture"
     "incident incident"
