@@ -17,6 +17,8 @@ body {
   background: #EDE9E1;
   font-family: 'Noto Serif KR', serif;
   color: var(--bn-ink);
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .bn-wrap {
@@ -245,7 +247,14 @@ body {
   .bn-wrap { padding: 12px 8px 40px; }
   .bn-paper { padding: 22px 16px; }
   .bn-logo { font-size: 17px; letter-spacing: 0.5px; }
-  .bn-nav a { padding: 7px 7px; font-size: 11px; }
+  .bn-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .bn-nav::-webkit-scrollbar { display: none; }
+  .bn-nav a { padding: 7px 9px; font-size: 11px; white-space: nowrap; flex-shrink: 0; }
   .bn-grid { grid-template-columns: 1fr 1fr; grid-template-areas:
     "culture culture"
     "incident incident"
