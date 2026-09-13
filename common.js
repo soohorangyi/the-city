@@ -78,7 +78,7 @@ function bnRenderFooter() {
   var el = document.getElementById("bn-footer");
   if (!el) return;
   el.innerHTML =
-    '<p>Belle Noir &middot; 격주 발행 &middot; 제보 및 편지는 편집부로</p>';
+    '<p>The Belle City Herald-Tribune &middot; 격주 발행 &middot; 제보 및 편지는 편집부로</p>';
 }
 
 document.addEventListener("DOMContentLoaded", function () {
